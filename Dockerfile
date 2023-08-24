@@ -13,6 +13,4 @@ RUN pip install prometheus-client
 RUN pip3 install prometheus_client
 RUN pip3 install waterfurnace
 
-RUN ["chmod", "+x", "start.sh"]
-
-CMD [ "./start.sh" ]
+CMD [ "python3", "index.py" ]
